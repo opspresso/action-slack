@@ -24,3 +24,14 @@ Name | Description | Default | Required
 ---- | ----------- | ------- | --------
 SLACK_TOKEN | Your Slack WeebHook Token. | | **Yes**
 JSON_PATH | The json file path of the slack message. | | **Yes**
+
+## exec
+
+```bash
+URL="https://hooks.slack.com/services/${SLACK_TOKEN}"
+curl \
+    -sSL \
+    -X POST \
+    -H "Content-type: application/json" \
+    --data @"${JSON_PATH}"
+```

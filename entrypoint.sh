@@ -12,8 +12,6 @@ if [ -z "${JSON_PATH}" ] || [ ! -f "${JSON_PATH}" ]; then
   exit 1
 fi
 
-CONTENT_TYPE_HEADER="Content-Type: ${FILETYPE}"
-
 URL="https://hooks.slack.com/services/${SLACK_TOKEN}"
 curl \
     -sSL \
