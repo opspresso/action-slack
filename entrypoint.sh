@@ -1,6 +1,4 @@
-#!/bin/sh
-
-set -e
+#!/bin/bash
 
 _slack_pre() {
   if [ -z "${SLACK_TOKEN}" ]; then
