@@ -1,7 +1,5 @@
 # Post Slack
 
-<a href="https://github.com/opspresso/action-slack"><img alt="GitHub Actions status" src="https://github.com/opspresso/action-slack/workflows/Build-Push/badge.svg"></a>
-
 ## Usage
 
 ```yaml
