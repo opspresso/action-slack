@@ -8,7 +8,7 @@ name: Post Slack
 on: push
 
 jobs:
-  deploy:
+  slack:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
