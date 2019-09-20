@@ -23,7 +23,7 @@ jobs:
 Name | Description | Default | Required
 ---- | ----------- | ------- | --------
 SLACK_TOKEN | Your Slack WeebHook Token. | | **Yes**
-JSON_PATH | The json file path of the slack message. | | **Yes**
+JSON_PATH | The json file path of the slack message. [see](https://api.slack.com/incoming-webhooks) | | **Yes**
 
 ## exec
 
