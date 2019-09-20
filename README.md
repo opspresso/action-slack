@@ -11,8 +11,13 @@ jobs:
   slack:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@master
-    - uses: opspresso/action-slack@master
+    - name: Checkout
+      uses: actions/checkout@v1
+      with:
+        fetch-depth: 1
+
+    - name: Slack
+      uses: opspresso/action-slack@master
       env:
         SLACK_TOKEN: ${{ secrets.SLACK_TOKEN }}
         JSON_PATH: ./target/slack_message.json
