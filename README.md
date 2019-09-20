@@ -1,1 +1,26 @@
-# action-slack
+# Post Slack
+
+## Usage
+
+```yaml
+name: Post Slack
+
+on: push
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - uses: opspresso/action-slack@master
+      env:
+        SLACK_TOKEN: ${{ secrets.SLACK_TOKEN }}
+        JSON_PATH: ./target/slack_message.json
+```
+
+## env
+
+Name | Description | Default | Required
+---- | ----------- | ------- | --------
+SLACK_TOKEN | Your Slack WeebHook Token. | | **Yes**
+JSON_PATH | The json file path of the slack message. | | **Yes**
