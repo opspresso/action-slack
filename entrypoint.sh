@@ -1,14 +1,22 @@
 #!/bin/bash
 
+_error() {
+  echo -e "$1"
+
+  if [ ! -z "${LOOSE_ERROR}" ]; then
+    exit 0
+  else
+    exit 1
+  fi
+}
+
 _slack_pre() {
   if [ -z "${SLACK_TOKEN}" ]; then
-    echo "SLACK_TOKEN is not set."
-    exit 1
+    _error "SLACK_TOKEN is not set."
   fi
 
   if [ -z "${JSON_PATH}" ] || [ ! -f "${JSON_PATH}" ]; then
-    echo "JSON_PATH is not set."
-    exit 1
+    _error "JSON_PATH is not set."
   fi
 }
 
