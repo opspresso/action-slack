@@ -1,4 +1,4 @@
-FROM opspresso/awscli
+FROM opspresso/builder:v0.6.4
 
 LABEL "com.github.actions.name"="Post Slack"
 LABEL "com.github.actions.description"="Post Message to Slack"
