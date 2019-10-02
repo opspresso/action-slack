@@ -1,0 +1,11 @@
+name: 'Post Slack'
+description: 'Post Message to Slack'
+author: 'Jungyoul Yu <@nalbam>'
+
+branding:
+  icon: 'message-square'
+  color: 'purple'
+
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
