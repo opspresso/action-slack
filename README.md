@@ -1,5 +1,8 @@
 # Post Slack
 
+[![GitHub Actions status](https://github.com/opspresso/action-slack/workflows/Build-Push/badge.svg)](https://github.com/opspresso/action-slack/actions)
+[![GitHub Releases](https://img.shields.io/github/release/opspresso/action-slack.svg)](https://github.com/opspresso/action-slack/releases)
+
 ## Usage
 
 ```yaml
